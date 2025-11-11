@@ -21,7 +21,7 @@ namespace TSS.DataLayer.Concretes.Dapper
 
         public void AddEntities(Hardwares_Component Tentities)
         {
-            GetConnection().Execute("INSERT INTO Hardwares_Component(Drive,Description)VALUES(@drive,@description)", Tentities);
+            GetConnection().Execute("INSERT INTO Hardwares_Component(HardwareID,ComponentID,Description)VALUES(@HardwaresID,@ComponentID,@Description)", Tentities);
         }
 
         public void DeleteEntities(int id)
