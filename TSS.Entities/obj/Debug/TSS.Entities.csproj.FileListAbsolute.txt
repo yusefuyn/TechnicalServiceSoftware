@@ -18,3 +18,9 @@ C:\Users\GoPOS\Desktop\Technical Services Software\TSS.Entities\obj\Debug\TSS.En
 C:\Users\GoPOS\Desktop\Technical Services Software\TSS.Entities\obj\Debug\TSS.Entities.csproj.CoreCompileInputs.cache
 C:\Users\GoPOS\Desktop\Technical Services Software\TSS.Entities\obj\Debug\TSS.Entities.dll
 C:\Users\GoPOS\Desktop\Technical Services Software\TSS.Entities\obj\Debug\TSS.Entities.pdb
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Entities\bin\Debug\TSS.Entities.dll
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Entities\bin\Debug\TSS.Entities.pdb
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Entities\obj\Debug\TSS.Entities.csproj.AssemblyReference.cache
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Entities\obj\Debug\TSS.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Entities\obj\Debug\TSS.Entities.dll
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Entities\obj\Debug\TSS.Entities.pdb

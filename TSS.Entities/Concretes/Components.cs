@@ -9,11 +9,8 @@ namespace TSS.Entities.Concretes
     public class Components : TSS.Entities.Abstracts.IEntity
     {
         public int ID { get; set; }
-        public int CID { get; set; }
-        public string CompName { get; set; }
-        public string CompDesc { get; set; }
-        public int CompTypeID { get; set; }
-        public string CompTypeName { get; set; }
-        public string CompTypeExpl { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int ComponentTypeId { get; set; }
     }
 }

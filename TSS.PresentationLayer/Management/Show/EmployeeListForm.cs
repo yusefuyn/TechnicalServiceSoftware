@@ -66,7 +66,7 @@ namespace TSS.UserInterface.Management.Show
 
         private void btnDeleteEmployee_Click(object sender, EventArgs e)
         {
-            Dialog.YesNoMessageDialog messageBox = new Dialog.YesNoMessageDialog("Seçili çalışanı(" + dgvEmployee.CurrentRow.Cells[1].Value + " " + dgvEmployee.CurrentRow.Cells[2].Value + ") silmek istediğinize eminmisiniz ?", "Karar Anı :P", 800);
+            Dialog.YesNoMessageDialog messageBox = new Dialog.YesNoMessageDialog("Seçili çalışanı(" + dgvEmployee.CurrentRow.Cells[1].Value + " " + dgvEmployee.CurrentRow.Cells[2].Value + ") silmek istediğinize eminmisiniz ?", "Karar Anı :P", Dialog.YesNoMessageDialog.TypeEnum.Soru);
             if (messageBox.ShowDialog() == DialogResult.Yes)
             {
                 if (lblSelectedItem.Text != "secilenid")

@@ -12,55 +12,32 @@ namespace TSS.UserInterface.Dialog
 {
     public partial class YesNoMessageDialog : Form
     {
-
-        public enum TypeEnum
-        {
-            Uyarı,
-            Hata,
-            Bilgi,
-            Soru
-        }
-
-        string _Message = "", _Hood = "";
-        public YesNoMessageDialog(string Message,string Hood,int Width=800)
+        public YesNoMessageDialog(string Message, string Title, TypeEnum typeEnum, int width = 300)
         {
             InitializeComponent();
-            _Message = Message;
-            _Hood = Hood;
-            Size = new Size(Width, this.Size.Height);
-
+            label1.Text = Message;
         }
 
         private void YesNoMessageDialog_Load(object sender, EventArgs e)
         {
-            label1.Text = _Hood;
-            label2.Text = _Message;
-            pictureBox1.Image = new Bitmap(Application.StartupPath + @"\Images\Question.gif");
+
         }
 
-        public YesNoMessageDialog(string Message, string Hood,TypeEnum Type, int Width=800)
+        public enum TypeEnum
         {
-            InitializeComponent();
-            _Message = Message;
-            _Hood = Hood;
-            switch (Type)
-            {
-                case TypeEnum.Uyarı:
-                    pictureBox1.Image = new Bitmap(Application.StartupPath + @"\Images\Warning.gif");
-                    break;
-                case TypeEnum.Hata:
-                    pictureBox1.Image = new Bitmap(Application.StartupPath + @"\Images\Error.gif");
-                    break;
-                case TypeEnum.Bilgi:
-                    pictureBox1.Image = new Bitmap(Application.StartupPath + @"\Images\Info.gif");
-                    break;
-                case TypeEnum.Soru:
-                    pictureBox1.Image = new Bitmap(Application.StartupPath + @"\Images\Question.gif");
-                    break;
-                default:
-                    break;
-            }
-            Size = new Size(Width,this.Size.Height);
+            Soru
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.No;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Yes;
         }
     }
+
+
 }

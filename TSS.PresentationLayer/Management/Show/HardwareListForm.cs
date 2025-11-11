@@ -78,7 +78,7 @@ namespace TSS.UserInterface.Management.Show
         {
             if (dgvHardwares.SelectedRows.Count != 0)
             {
-                Dialog.YesNoMessageDialog messageBox = new Dialog.YesNoMessageDialog("Seçili Donanım(" + dgvHardwares.CurrentRow.Cells[2].Value + ") ile ilgili \"TÜM VERİLERİ\" silmek istediğinize eminmisiniz ?", "Karar Anı :P", 800);
+                Dialog.YesNoMessageDialog messageBox = new Dialog.YesNoMessageDialog("Seçili Donanım(" + dgvHardwares.CurrentRow.Cells[2].Value + ") ile ilgili \"TÜM VERİLERİ\" silmek istediğinize eminmisiniz ?", "Karar Anı :P", Dialog.YesNoMessageDialog.TypeEnum.Soru);
                 if (messageBox.ShowDialog() == DialogResult.Yes)
                 {
                     if (selectedItem != -1)

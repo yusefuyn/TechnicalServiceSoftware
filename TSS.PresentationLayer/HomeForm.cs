@@ -68,7 +68,7 @@ namespace TSS.UserInterface
                 }
             }
             btnHome.PerformClick();
-            btnChangeTheme.Image = new Bitmap("Images/Dark.gif");
+            //btnChangeTheme.Image = new Bitmap("Images/Dark.gif");
         }
 
         private void btnCustomer_Click(object sender, EventArgs e)
@@ -140,7 +140,7 @@ namespace TSS.UserInterface
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            pBoxLogo.Image = new Bitmap("Images\\settings.gif");
+            //pBoxLogo.Image = new Bitmap("Images\\settings.gif");
             chilFormOpen(new Management.ApplicationSettings(), btnSettings);
         }
 
@@ -172,7 +172,5 @@ namespace TSS.UserInterface
             pBoxLogo.Image = new Bitmap("Images\\home.gif");
             chilFormOpen(new Management.Show.Home(), btnHome);
         }
-
-
     }
 }

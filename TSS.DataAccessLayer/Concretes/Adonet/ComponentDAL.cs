@@ -43,9 +43,9 @@ namespace TSS.DataLayer.Concretes.Adonet
                         {
                             Components component = new Components();
                             component.ID = Reader.GetInt32(0);
-                            component.CompName = Reader.GetString(1);
-                            component.CompDesc = Reader.GetString(2);
-                            component.CompTypeID = Reader.GetInt32(3);
+                            component.Name = Reader.GetString(1);
+                            component.Description = Reader.GetString(2);
+                            component.ComponentTypeId = Reader.GetInt32(3);
                             returnedList.Add(component);
                         }
                     }
@@ -78,9 +78,9 @@ namespace TSS.DataLayer.Concretes.Adonet
                         {
                             Components component = new Components();
                             component.ID = Reader.GetInt32(0);
-                            component.CompName = Reader.GetString(1);
-                            component.CompDesc = Reader.GetString(2);
-                            component.CompTypeID = Reader.GetInt32(3);
+                            component.Name = Reader.GetString(1);
+                            component.Description = Reader.GetString(2);
+                            component.ComponentTypeId = Reader.GetInt32(3);
 
                             returnedList.Add(component);
                         }
@@ -114,9 +114,9 @@ namespace TSS.DataLayer.Concretes.Adonet
                         {
                             Components component = new Components();
                             component.ID = Reader.GetInt32(0);
-                            component.CompName = Reader.GetString(1);
-                            component.CompDesc = Reader.GetString(2);
-                            component.CompTypeID = Reader.GetInt32(3);
+                            component.Name = Reader.GetString(1);
+                            component.Description = Reader.GetString(2);
+                            component.ComponentTypeId = Reader.GetInt32(3);
                             returnData = component;
                         }
                     }
@@ -149,9 +149,9 @@ namespace TSS.DataLayer.Concretes.Adonet
                         {
                             Components component = new Components(); //Description,Customer,Interested
                             component.ID = Reader.GetInt32(0);
-                            component.CompName = Reader.GetString(1);
-                            component.CompDesc = Reader.GetString(2);
-                            component.CompTypeID = Reader.GetInt32(3);
+                            component.Name = Reader.GetString(1);
+                            component.Description = Reader.GetString(2);
+                            component.ComponentTypeId = Reader.GetInt32(3);
                             returnData = component;
                         }
                     }
@@ -196,17 +196,17 @@ namespace TSS.DataLayer.Concretes.Adonet
 
                 DbParameter nameParametre = sqliteobj.Command.CreateParameter();
                 nameParametre.ParameterName = "@name";
-                nameParametre.Value = TEntities.CompName;
+                nameParametre.Value = TEntities.Name;
                 sqliteobj.Command.Parameters.Add(nameParametre);
 
                 DbParameter desParametre = sqliteobj.Command.CreateParameter();
                 desParametre.ParameterName = "@des";
-                desParametre.Value = TEntities.CompDesc;
+                desParametre.Value = TEntities.Description;
                 sqliteobj.Command.Parameters.Add(desParametre);
 
                 DbParameter CtIDParametre = sqliteobj.Command.CreateParameter();
                 CtIDParametre.ParameterName = "@CtID";
-                CtIDParametre.Value = TEntities.CompTypeID;
+                CtIDParametre.Value = TEntities.ComponentTypeId;
                 sqliteobj.Command.Parameters.Add(CtIDParametre);
 
                 sqliteobj.Command.ExecuteNonQuery();
@@ -225,17 +225,17 @@ namespace TSS.DataLayer.Concretes.Adonet
 
                 DbParameter nameParametre = sqliteobj.Command.CreateParameter();
                 nameParametre.ParameterName = "@name";
-                nameParametre.Value = Tentities.CompName;
+                nameParametre.Value = Tentities.Name;
                 sqliteobj.Command.Parameters.Add(nameParametre);
 
                 DbParameter desParametre = sqliteobj.Command.CreateParameter();
                 desParametre.ParameterName = "@des";
-                desParametre.Value = Tentities.CompDesc;
+                desParametre.Value = Tentities.Description;
                 sqliteobj.Command.Parameters.Add(desParametre);
 
                 DbParameter CtIDParametre = sqliteobj.Command.CreateParameter();
                 CtIDParametre.ParameterName = "@CtID";
-                CtIDParametre.Value = Tentities.CompTypeID;
+                CtIDParametre.Value = Tentities.ComponentTypeId;
                 sqliteobj.Command.Parameters.Add(CtIDParametre);
 
                 sqliteobj.Command.ExecuteNonQuery();

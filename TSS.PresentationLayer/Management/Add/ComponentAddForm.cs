@@ -20,9 +20,9 @@ namespace TSS.UserInterface.Management.Add
         private void btnOk_Click(object sender, EventArgs e)
         {
             Program.componentManager.AddEntities(new Entities.Concretes.Components() { 
-                CompTypeID = Convert.ToInt32(comboBox1.SelectedValue),
-                CompName=txtName.Text,
-                CompDesc=txtDescription.Text
+                ComponentTypeId = Convert.ToInt32(comboBox1.SelectedValue),
+                Name=txtName.Text,
+                Description=txtDescription.Text
             });
         }
 

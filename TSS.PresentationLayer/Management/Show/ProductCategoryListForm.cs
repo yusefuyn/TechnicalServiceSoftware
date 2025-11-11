@@ -59,7 +59,7 @@ namespace TSS.UserInterface.Management.Show
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)
         {
-            Dialog.YesNoMessageDialog messageBox = new Dialog.YesNoMessageDialog("Seçili Ürün Kategori(" + dgvProductCategory.CurrentRow.Cells[1].Value + ") silmek istediğinize eminmisiniz ?", "Karar Anı :P", 800);
+            Dialog.YesNoMessageDialog messageBox = new Dialog.YesNoMessageDialog("Seçili Ürün Kategori(" + dgvProductCategory.CurrentRow.Cells[1].Value + ") silmek istediğinize eminmisiniz ?", "Karar Anı :P", Dialog.YesNoMessageDialog.TypeEnum.Soru);
             if (messageBox.ShowDialog() == DialogResult.Yes)
             {
                 if (txtID.Text != "secilenid")

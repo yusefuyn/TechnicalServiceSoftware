@@ -56,3 +56,19 @@ C:\Users\GoPOS\Desktop\Technical Services Software\TSS.Tools\obj\Debug\TSS.Tools
 C:\Users\GoPOS\Desktop\Technical Services Software\TSS.Tools\obj\Debug\TSS.Tools.csproj.CopyComplete
 C:\Users\GoPOS\Desktop\Technical Services Software\TSS.Tools\obj\Debug\TSS.Tools.dll
 C:\Users\GoPOS\Desktop\Technical Services Software\TSS.Tools\obj\Debug\TSS.Tools.pdb
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\bin\Debug\TSS.Tools.dll.config
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\bin\Debug\TSS.Tools.dll
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\bin\Debug\TSS.Tools.pdb
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\bin\Debug\EntityFramework.dll
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\bin\Debug\System.Data.SQLite.dll
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\bin\Debug\EntityFramework.xml
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\bin\Debug\System.Data.SQLite.xml
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\obj\Debug\TSS.Tools.csproj.AssemblyReference.cache
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\obj\Debug\TSS.Tools.csproj.CoreCompileInputs.cache
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\obj\Debug\TSS.Tools.csproj.Up2Date
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\obj\Debug\TSS.Tools.dll
+C:\Users\Yusuf\source\repos\yusefuyn\TechnicalServiceSoftware\TSS.Tools\obj\Debug\TSS.Tools.pdb

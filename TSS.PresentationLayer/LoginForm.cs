@@ -22,7 +22,8 @@ namespace TSS.UserInterface
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

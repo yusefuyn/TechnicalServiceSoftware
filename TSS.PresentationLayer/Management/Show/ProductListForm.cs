@@ -29,7 +29,7 @@ namespace TSS.UserInterface.Management.Show
                 return;
             }
 
-            Dialog.YesNoMessageDialog messageBox = new Dialog.YesNoMessageDialog("Seçili Ürün (" + dgvProduct.CurrentRow.Cells[1].Value + ") silmek istediğinize eminmisiniz ?", "Karar Anı :P", 800);
+            Dialog.YesNoMessageDialog messageBox = new Dialog.YesNoMessageDialog("Seçili Ürün (" + dgvProduct.CurrentRow.Cells[1].Value + ") silmek istediğinize eminmisiniz ?", "Karar Anı :P", Dialog.YesNoMessageDialog.TypeEnum.Soru);
             if (messageBox.ShowDialog() == DialogResult.Yes)
             {
                 if (lblSelectedItem.Text != "secilenid")

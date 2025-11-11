@@ -37,9 +37,8 @@ namespace TSS.UserInterface.Management.Show
             lblComponent.Text = Program.componentManager.getAllEntities().Count.ToString() + " Komponent";
             pbAccount.Image = new Bitmap("Images\\account.gif");
             lblAccount.Text = "0" + " Hesap";
-            pictureBox1.Image = new Bitmap("Images\\computer.gif");
-            pictureBox2.Image = new Bitmap("Images\\market.gif");
-
+            pictureBox1.Image = new Bitmap("Images\\device.gif");
+            pictureBox2.Image = new Bitmap("Images\\product.gif");
         }
     }
 }

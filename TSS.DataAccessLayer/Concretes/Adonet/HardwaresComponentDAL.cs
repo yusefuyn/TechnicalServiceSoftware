@@ -166,14 +166,7 @@ namespace TSS.DataLayer.Concretes.Adonet
                             Hardwares_Component hComponent = new Hardwares_Component();
                             hComponent.ID = Reader.GetInt32(0);
                             hComponent.HardwaresID = Convert.ToInt32(data) ;
-                            hComponent.ComponentID = new Components()
-                            {
-                                ID = Reader.GetInt32(0),
-                                CompName = Reader.GetString(1),
-                                CompDesc = Reader.GetString(2),
-                                CompTypeID = Reader.GetInt32(3),
-                                CompTypeName = Reader.GetString(4)
-                            };
+                            hComponent.ComponentID = Reader.GetInt32(0);
                             returnedList.Add(hComponent);
                         }
                     }
@@ -193,12 +186,12 @@ namespace TSS.DataLayer.Concretes.Adonet
 
             DbParameter nameParametre = sqliteobj.Command.CreateParameter();
             nameParametre.ParameterName = "@hid";
-            nameParametre.Value = TEntities.HardwaresID.ID;
+            nameParametre.Value = TEntities.HardwaresID;
             sqliteobj.Command.Parameters.Add(nameParametre);
 
             DbParameter lnameParametre = sqliteobj.Command.CreateParameter();
             lnameParametre.ParameterName = "@cid";
-            lnameParametre.Value = TEntities.ComponentID.ID;
+            lnameParametre.Value = TEntities.ComponentID;
             sqliteobj.Command.Parameters.Add(lnameParametre);
 
             DbParameter addressParametre = sqliteobj.Command.CreateParameter();

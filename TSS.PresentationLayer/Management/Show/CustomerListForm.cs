@@ -83,7 +83,7 @@ namespace TSS.UserInterface.Management.Show
 
         private void btnDeleteCustomer_Click(object sender, EventArgs e)
         {
-            Dialog.YesNoMessageDialog messageBox = new Dialog.YesNoMessageDialog("Seçili Müşteri("+dgvCustomer.CurrentRow.Cells[1].Value+") silmek istediğinize eminmisiniz ?","Karar Anı :P",800);
+            Dialog.YesNoMessageDialog messageBox = new Dialog.YesNoMessageDialog("Seçili Müşteri("+dgvCustomer.CurrentRow.Cells[1].Value+") silmek istediğinize eminmisiniz ?","Karar Anı :P", Dialog.YesNoMessageDialog.TypeEnum.Soru);
             if (messageBox.ShowDialog() == DialogResult.Yes)
             {
                 if (lblSelectedItem.Text != "secilenid")

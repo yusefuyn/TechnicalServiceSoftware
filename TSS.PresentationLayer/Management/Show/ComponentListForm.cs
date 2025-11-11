@@ -52,9 +52,9 @@ namespace TSS.UserInterface.Management.Show
             dgvComponent.Rows.Clear();
             foreach (var item in components)
                 dgvComponent.Rows.Add(new string[] { item.ID.ToString(),
-                    item.CompName,
-                    item.CompDesc,
-                    components_Types.Find(x => x.ID == item.CompTypeID).Name.ToString()
+                    item.Name,
+                    item.Description,
+                    components_Types.Find(x => x.ID == item.ComponentTypeId).Name.ToString()
                 });
             totalItem = components.Count();
         }

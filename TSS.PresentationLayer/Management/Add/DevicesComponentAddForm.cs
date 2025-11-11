@@ -43,8 +43,8 @@ namespace TSS.UserInterface.Management.Add
             Program.hardwaresComponentManager.AddEntities(new Entities.Concretes.Hardwares_Component()
             {
                 
-                HardwaresID = new Entities.Concretes.Hardwares() { ID = _id },
-                ComponentID = new Entities.Concretes.Components() { ID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString()) },
+                HardwaresID = _id,
+                ComponentID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString()),
                 Description = ""
             });
             DataRefresh();
@@ -55,7 +55,7 @@ namespace TSS.UserInterface.Management.Add
             dataGridView1.DataSource = Program.componentManager.getAllEntities();
             dataGridView2.Rows.Clear();
             foreach (var item in Program.hardwaresComponentManager.GetAllEntitiesByFiltered(x=>x.ID == _id))
-                dataGridView2.Rows.Add(item.ID,item.HardwaresID.ID,item.ComponentID.ID);
+                dataGridView2.Rows.Add(item.ID,item.HardwaresID,item.ComponentID);
         }
 
         private void DevicesComponentAddForm_Load(object sender, EventArgs e)

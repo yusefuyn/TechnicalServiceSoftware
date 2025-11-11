@@ -21,7 +21,7 @@ namespace TSS.DataLayer.Concretes.Dapper
 
         public void AddEntities(Components Tentities)
         {
-            GetConnection().Execute("INSERT INTO Components(Name,Description,CompTypeID)VALUES(@compname,@compdesc,@comptypeid)", Tentities);
+            GetConnection().Execute("INSERT INTO Components(Name,Description,CompTypeID)VALUES(@Name,@Description,@ComponentTypeId)", Tentities);
         }
 
         public void DeleteEntities(int id)
@@ -31,7 +31,7 @@ namespace TSS.DataLayer.Concretes.Dapper
 
         public List<Components> GetAllEntities()
         {
-            return GetConnection().Query<TSS.Entities.Concretes.Components>("SELECT Components.ID ID, Components.Name CompName, Components.Description CompDesc, Components_Type.ID CompTypeID, Components_Type.name CompTypeName, Components_Type.Explanation CompTypeExpl FROM Components INNER JOIN Components_Type ON Components.CompTypeID = Components_Type.ID").ToList();
+            return GetConnection().Query<TSS.Entities.Concretes.Components>("SELECT * FROM Components ").ToList();
         }
 
         public void UpdateEntities(int id, Components TEntities)

@@ -94,8 +94,8 @@ namespace TSS.UserInterface.Management.Show
             i = 0;
             foreach (var item in hardwares_Components)
             {
-                Components compss = comps.Find(x => x.ID == item.ComponentID.ID);
-                HardwareDriveObj hd = new HardwareDriveObj(compss.CompName, components_Types.Find(x => x.ID == compss.CompTypeID).Name);
+                Components compss = comps.Find(x => x.ID == item.ComponentID);
+                HardwareDriveObj hd = new HardwareDriveObj(compss.Name, components_Types.Find(x => x.ID == compss.ComponentTypeId).Name);
                 hd.Location = new Point(0, 28 * i);
                 i++;
                 pnlComponent.Controls.Add(hd);
