@@ -32,11 +32,11 @@ namespace TSS.DataLayer.Concretes.Dapper
         public List<Hardwares_Component> GetAllEntities()
         {
             string query = @"SELECT Components.name,Components.Description,Components_Type.name
-from Hardwares_Component
-INNER JOIN Components ON Components.ID = Hardwares_Component.ComponentID
-INNER JOIN Components_Type ON Components_Type.ID = Components.ID
-WHERE Hardwares_Component.HardwareID = 11
-GROUP BY Components.name,Components_Type.name,components.Description";
+                from Hardwares_Component
+                INNER JOIN Components ON Components.ID = Hardwares_Component.ComponentID
+                INNER JOIN Components_Type ON Components_Type.ID = Components.ID
+                WHERE Hardwares_Component.HardwareID = 11
+                GROUP BY Components.name,Components_Type.name,components.Description";
             return GetConnection().Query<TSS.Entities.Concretes.Hardwares_Component>(query).ToList();
         }
 
